@@ -1,101 +1,204 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bumblebee</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-        }
-
-        nav li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-        }
-    </style>
+    <title>Masayuki Tanaka | Backend Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+    <!-- Header Section -->
     <header>
-        <h1>Bumblebee</h1>
-        <nav>
-            <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">プロフィール</a></li>
-                <li><a href="#">スキル</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <div class="container hero-content">
+            <h1 class="hero-name">Masayuki Tanaka</h1>
+            <p class="hero-title">Senior Backend Engineer</p>
+            <p class="hero-description">Crafting robust backend systems for over 15 years with Go, PHP, Python, and TypeScript. Specializing in scalable APIs, microservices, and cloud-native applications.</p>
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <img src="images/nr_me.jpg" alt="あなたの名前" class="profile-image">
-        <h2>自己紹介</h2>
-        <p>ソフトウェア開発</p>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container fade-in">
+                <h2>About Me</h2>
+                <p>With more than 15 years in backend engineering, I've built and scaled systems that serve millions of users. My approach combines technical expertise with a deep understanding of business requirements, enabling me to deliver solutions that are both efficient and aligned with organizational goals.</p>
+                <p>I excel in creating resilient, maintainable codebases and enjoy tackling complex architectural challenges. Whether optimizing legacy systems or designing new microservices, I'm passionate about creating backend infrastructures that support seamless user experiences.</p>
+            </div>
+        </section>
 
-        <h2>スキル</h2>
-        <ul>
-            <li>Backend Engineer</li>
-        </ul>
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container fade-in">
+                <h2>Technical Expertise</h2>
+                <p>My toolkit has evolved over 15+ years, allowing me to select the right technologies for each specific challenge.</p>
+                
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h3>Languages & Frameworks</h3>
+                        <ul class="skill-list">
+                            <li>PHP (Laravel, Symfony)</li>
+                            <li>Python (FastAPI, Django)</li>
+                            <li>TypeScript / JavaScript (Express, Hono)</li>
+                            <li>Go (Gin, Echo)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h3>Cloud & Infrastructure</h3>
+                        <ul class="skill-list">
+                            <li>AWS (EC2, Lambda, RDS, S3, etc.)</li>
+                            <li>GCP (Cloud Run, Cloud Functions)</li>
+                            <li>Docker / Kubernetes</li>
+                            <li>Terraform / CloudFormation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h3>Databases</h3>
+                        <ul class="skill-list">
+                            <li>MySQL / PostgreSQL</li>
+                            <li>MongoDB / Redis</li>
+                            <li>BigQuery / DynamoDB</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h3>Testing & CI/CD</h3>
+                        <ul class="skill-list">
+                            <li>Jest / Pytest / PHPUnit</li>
+                            <li>GitHub Actions / GitLab CI</li>
+                            <li>CircleCI / CodePipeline</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>作品</h2>
-        <p>追加予定</p>
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container fade-in">
+                <h2>Featured Projects</h2>
+                <p>These selected projects highlight my ability to transform complex requirements into elegant technical solutions.</p>
+                
+                <div class="card">
+                    <h3 class="card-title">
+                        <i class="fas fa-cube"></i>
+                        UGC Asynchronous Processing Platform
+                    </h3>
+                    <div class="card-subtitle">
+                        <span class="card-meta"><i class="far fa-calendar-alt"></i> March 2022 – March 2023</span>
+                        <span class="card-meta"><i class="fas fa-code-branch"></i> Full Stack Engineer (Backend Focus)</span>
+                        <span class="card-meta"><i class="fas fa-laptop-code"></i> Go, PHP, AWS</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Led the modernization of a legacy system dating back to the 2000s, implementing robust asynchronous processing for user-generated content. By architecting a series of microservices with Go and integrating them with AWS Step Functions, we achieved:</p>
+                        <ul class="skill-list">
+                            <li>70% reduction in processing time for media uploads</li>
+                            <li>99.9% uptime with resilient failure handling mechanisms</li>
+                            <li>Seamless scaling to handle 20x traffic spikes during peak events</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">
+                        <i class="fas fa-gamepad"></i>
+                        Fighting Game Backend Platform
+                    </h3>
+                    <div class="card-subtitle">
+                        <span class="card-meta"><i class="far fa-calendar-alt"></i> February 2016 – December 2022</span>
+                        <span class="card-meta"><i class="fas fa-code-branch"></i> Backend Development / API Design</span>
+                        <span class="card-meta"><i class="fas fa-laptop-code"></i> PHP (Symfony), AWS</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Spearheaded critical improvements to the day-one system for a popular fighting game franchise, creating a robust backend that supports millions of active players. The project involved:</p>
+                        <ul class="skill-list">
+                            <li>Designing and implementing RESTful APIs with 30ms average response time</li>
+                            <li>Building a scalable matchmaking system that reduced wait times by 40%</li>
+                            <li>Collaborating with an external vendor to overhaul the entire backend infrastructure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud Experience Section -->
+        <section id="cloud">
+            <div class="container fade-in">
+                <h2>Cloud Platform Experience</h2>
+                <p>My expertise spans multiple cloud environments, allowing me to architect solutions that maximize performance, reliability, and cost-efficiency.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Services Used</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AWS</td>
+                            <td>Lambda, ECS, RDS, API Gateway, S3</td>
+                        </tr>
+                        <tr>
+                            <td>GCP</td>
+                            <td>Cloud Run, Pub/Sub, Firestore, BigQuery</td>
+                        </tr>
+                        <tr>
+                            <td>Others</td>
+                            <td>Vercel, Netlify, Heroku</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container fade-in">
+                <h2>Let's Connect</h2>
+                <p>Interested in working together? Feel free to reach out through any of the following channels.</p>
+                
+                <ul class="contact-list">
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/masayukitanaka" target="_blank">github.com/masayukitanaka</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/masayuki-tanaka-bb45a256/" target="_blank">linkedin.com/in/masayuki-tanaka-bb45a256</a>
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:masayuki.tanaka.swe@gmail.com">masayuki.tanaka.swe@gmail.com</a>
+                    </li>
+                </ul>
+                
+                <div class="card" style="margin-top: 2rem;">
+                    <h3 class="card-title">Additional Information</h3>
+                    <ul class="skill-list">
+                        <li>Code samples and GitHub repositories available upon request</li>
+                        <li>Comfortable working in both English and Japanese environments</li>
+                        <li>Available for remote work and occasional on-site collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 masayukitanaka</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Masayuki Tanaka. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>
