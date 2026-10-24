@@ -1,0 +1,53 @@
+@import "tailwindcss" source(".");
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Noto Sans JP", ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Design tokens (handoff: Portfolio 2a) */
+  --color-bg: #f5f7f9;
+  --color-ink: #171b1f;
+  --color-text-muted: #51565b;
+  --color-text-sub: #5f6469;
+  --color-text-label: #6d7277;
+  --color-text-body: #494e52;
+  --color-line: #dcdee1;
+  --color-line-soft: #e2e5e7;
+  --color-border-btn: #cbced1;
+  --color-border-thumb: #d5d8db;
+  --color-chip: #e9ebee;
+  --color-accent: #32669a;
+  --color-link: #23588a;
+  /* Work "Type" badge colors */
+  --color-type-opensource-bg: #dbeafe;
+  --color-type-opensource-fg: #1e40af;
+  --color-type-tool-bg: #fee2e2;
+  --color-type-tool-fg: #b91c1c;
+  --color-type-service-bg: #dcfce7;
+  --color-type-service-fg: #15803d;
+  --color-ascii-sun: #ba7331;
+  --color-ascii-sky: #82878c;
+  --color-ascii-sea: #32669a;
+  --color-ascii-foam: #7fa5b8;
+  --color-ascii-sand: #988265;
+}
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 0.85;
+  }
+}
