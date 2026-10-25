@@ -86,6 +86,20 @@ export interface Work {
 export const works: Work[] = [
   {
     no: "01",
+    year: "",
+    title: "LazyVlog",
+    type: "App",
+    role: "Design & Development",
+    summary:
+      "A mobile app that turns everyday photos into short AI-made video diaries. Choose up to three photos and one of ten moods, and the AI builds a cinematic clip ready to share on YouTube, TikTok or Instagram. Available in nine languages on iOS and Android.",
+    tags: ["React Native", "Python + Flask", "Supabase", "Google Cloud"],
+    shot: "screenshot — app landing page",
+    url: "https://lazyvlog.beezynx.dev/",
+    lp: "#",
+    image: "/works/work-lazyvlog.webp",
+  },
+  {
+    no: "02",
     year: "2026",
     title: "MangaDSL — Manga Layout Creator",
     type: "OpenSource",
@@ -99,21 +113,21 @@ export const works: Work[] = [
     image: "/works/work-manga-dsl.webp",
   },
   {
-    no: "02",
+    no: "03",
     year: "2026",
     title: "Manga Editor",
     type: "Tool",
     role: "Design & Development",
     summary:
       "A visual panel-layout editor for comic pages. Split, drag and resize panels on a live canvas, add speech balloons and image layers, and keep every edit in two-way sync with a readable .manga source file.",
-    tags: ["Manga", "Visual Editor", "MangaDSL", "React", "Hono", "D1", "Cloudflare Workers"],
+    tags: ["Manga", "Visual Editor", "MangaDSL", "React", "Hono", "D1", "Supabase", "Cloudflare Workers"],
     shot: "screenshot — panel editor",
     url: "https://manga-editor.ursytsr.workers.dev/",
     lp: "#",
     image: "/works/work-manga-editor.webp",
   },
   {
-    no: "03",
+    no: "04",
     year: "2026",
     title: "Character Palette",
     type: "Tool",
@@ -127,7 +141,7 @@ export const works: Work[] = [
     image: "/works/work-character-palette.webp",
   },
   {
-    no: "04",
+    no: "05",
     year: "2026",
     title: "Life As Comic",
     type: "Service",
@@ -141,7 +155,7 @@ export const works: Work[] = [
     image: "/works/work-life-as-comic.webp",
   },
   {
-    no: "05",
+    no: "06",
     year: "2026",
     title: "Storyboard Planner",
     type: "Tool",
@@ -155,7 +169,7 @@ export const works: Work[] = [
     image: "/works/work-storyboard.webp",
   },
   {
-    no: "06",
+    no: "07",
     year: "2026",
     title: "Small Talk Topic Cards",
     type: "Tool",
@@ -169,7 +183,7 @@ export const works: Work[] = [
     image: "/works/work-smalltalk.webp",
   },
   {
-    no: "07",
+    no: "08",
     year: "2026",
     title: "Memory Game (Multiplayer)",
     type: "Tool",
@@ -183,7 +197,7 @@ export const works: Work[] = [
     image: "/works/work-memory-game.webp",
   },
   {
-    no: "08",
+    no: "09",
     year: "2026",
     title: "Hiragana & Katakana Memory Hint",
     type: "Tool",
@@ -197,7 +211,7 @@ export const works: Work[] = [
     image: "/works/work-hiragana-hint.webp",
   },
   {
-    no: "09",
+    no: "10",
     year: "2026",
     title: "Japanese Practice — Kana Puzzle & Flashcards",
     type: "Tool",
@@ -211,7 +225,7 @@ export const works: Work[] = [
     image: "/works/work-nihongo-learn.webp",
   },
   {
-    no: "10",
+    no: "11",
     year: "2026",
     title: "YouTube Playlist Editor",
     type: "Tool",
